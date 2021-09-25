@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_vert"
+    android:id="@+id/vertical">
+
+    <ImageView
+        android:layout_width="@dimen/lwidth"
+        android:layout_height="@dimen/lheight"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/mar_top_flag"
+        android:layout_marginRight="@dimen/mar_bounds_flag"
+        android:background="@drawable/img_1" />
+
+    <ImageView
+        android:layout_width="@dimen/lwidth"
+        android:layout_height="@dimen/lheight"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/mar_top_flag"
+        android:layout_marginLeft="@dimen/mar_bounds_flag"
+        android:background="@drawable/img" />
+
+    <TextView
+        android:layout_width="@dimen/country_width"
+        android:layout_height="@dimen/countryname_height"
+        android:layout_marginLeft="@dimen/mar_bounds_country"
+        android:layout_marginTop="@dimen/mar_top_country"
+        android:background="@drawable/textbg"
+        android:gravity="center"
+        android:text="@string/arg"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="@string/jam"
+        android:layout_width="@dimen/country_width"
+        android:layout_height="@dimen/countryname_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/mar_top_country"
+        android:layout_marginRight="@dimen/mar_bounds_country"
+        android:background="@drawable/textbg" />
+
+    <TextView
+        android:id="@+id/arg"
+        android:layout_width="@dimen/counter_width"
+        android:layout_height="@dimen/counter_width"
+        android:layout_marginLeft="@dimen/counter_mar_bounds"
+        android:layout_marginTop="@dimen/counter_mar_top"
+        android:background="@drawable/textbg"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textCount" />
+
+    <TextView
+        android:id="@+id/jam"
+        android:gravity="center"
+        android:layout_width="@dimen/counter_width"
+        android:layout_height="@dimen/counter_width"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/counter_mar_top"
+        android:layout_marginRight="@dimen/counter_mar_bounds"
+        android:background="@drawable/textbg"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textCount"
+        />
+
+    <TextView
+        android:layout_width="@dimen/centerpointer_width"
+        android:layout_height="@dimen/centerpointer_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/centerpointer_mar_top"
+        android:text="@string/centerpointer"
+        android:textSize="@dimen/textCount"
+        android:textColor="@color/white"/>
+    <Button
+        android:layout_width="@dimen/addbtn_width"
+        android:layout_height="@dimen/addbtn_height"
+        android:background="@drawable/btnbg"
+        android:layout_marginTop="@dimen/addbtn_mar_top"
+        android:layout_marginRight="@dimen/addbtn_mar_bounds"
+        android:layout_alignParentRight="true"
+        android:onClick="addJam"
+        android:text="@string/addbtn"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="@dimen/addbtn_width"
+        android:layout_height="@dimen/addbtn_height"
+        android:layout_marginLeft="@dimen/addbtn_mar_bounds"
+        android:layout_marginTop="@dimen/addbtn_mar_top"
+        android:background="@drawable/btnbg"
+        android:onClick="addArg"
+        android:text="@string/addbtn"
+        android:textColor="@color/white"
+        />
+    <Button
+        android:layout_width="@dimen/resbtn_width"
+        android:layout_height="@dimen/resbtn_height"
+        android:background="@drawable/btnbg"
+        android:layout_marginTop="@dimen/resbtn_mar_top"
+        android:layout_centerHorizontal="true"
+        android:onClick="resetAll"
+        tools:ignore="OnClick"
+        android:text="@string/resbtn"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
